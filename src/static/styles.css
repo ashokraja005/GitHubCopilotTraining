@@ -74,6 +74,89 @@ section h3 {
   margin-bottom: 8px;
 }
 
+.participants-section {
+  margin-top: 14px;
+  padding: 14px 18px;
+  border: 1px solid #c5cae9;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #f1f4ff, #e8eaf6);
+}
+
+.participants-section h5 {
+  margin-bottom: 8px;
+  color: #3949ab;
+  font-size: 1rem;
+}
+
+.participants-list {
+  padding: 0;
+  list-style: none;
+}
+
+.participant-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 4px 0;
+  padding: 5px 8px;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.participant-item:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.participant-email {
+  overflow-wrap: anywhere;
+}
+
+.participant-remove-button {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 6px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  background-color: transparent;
+  color: #b3261e;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.participant-remove-button:hover:not(:disabled) {
+  border-color: #f0b8b5;
+  background-color: #ffebee;
+}
+
+.participant-remove-button:focus-visible {
+  outline: 2px solid #3949ab;
+  outline-offset: 2px;
+}
+
+.participant-remove-button:disabled {
+  cursor: wait;
+  opacity: 0.55;
+}
+
+.participant-remove-button svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+
+.participants-empty {
+  color: #666;
+  font-style: italic;
+}
+
 .form-group {
   margin-bottom: 15px;
 }
