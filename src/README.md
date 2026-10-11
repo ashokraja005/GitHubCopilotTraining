@@ -59,4 +59,4 @@ pip install pytest
 pytest
 ```
 
-The FastAPI test client dependencies are already listed in `requirements.txt`; pytest is kept separate from the runtime dependencies.
+The FastAPI test client dependencies and pytest are listed in `requirements.txt`.
